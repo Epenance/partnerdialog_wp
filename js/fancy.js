@@ -1,5 +1,9 @@
 $('.getContactedVegan').hide();
 
+$('#subMenuToggler').click(function() {
+  $('#subMenu').toggleClass("active");
+});
+
 $('.accordion-heading, .accordion-toggler').each(function(){
 
   var $content = $(this).closest('section').find('.accordion-content');

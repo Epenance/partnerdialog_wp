@@ -1,4 +1,17 @@
 <?php get_header(); ?>
+<div id="frontSlider">
+  <?php putRevSlider("frontslider") ?>
+  <!-- <div id="colorOverlay"></div> -->
+</div>
+<div id="frontFeatures">
+  <h2>
+    Kompetencer
+  </h2>
+  <div id="featuresContainer">
+      <?php dynamic_sidebar( 'feature-box' ); ?>
+  </div>
+</div>
+
 <?php include("getContacted.php") ?>
   <main>
     <?php get_sidebar(); ?>

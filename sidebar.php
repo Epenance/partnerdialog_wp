@@ -14,6 +14,8 @@
     <?php
     ?>
     <ul>
+      <?php //wp_list_pages("child_of=$post->ID&depth=1&title_li="); ?>
+
       <?php wp_list_pages("child_of=$parent_page&title_li="); ?>
     </ul>
   </div>

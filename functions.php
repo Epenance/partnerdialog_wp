@@ -37,6 +37,15 @@ function arphabet_widgets_init() {
     'after_title'   => '</h4>',
   ) );
 
+  register_sidebar( array(
+    'name'          => 'Feature box1',
+    'id'            => 'feature-box',
+    'before_widget' => '<div class="feature">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
 
